@@ -7,6 +7,7 @@
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #000000;
 }
 
 /* Estilos para o header */
@@ -20,8 +21,8 @@ body {
 }
 
 .header_logo img {
-  height: 70px;
-  margin-left: 38px;
+  height: 65px;
+  margin-left: 90px;
   width: auto;
 }
 
@@ -87,7 +88,7 @@ body {
 }
 
 .content_overlay {
-  margin-left: 25px;
+  margin-left: 90px;
 }
 
 .header_title {
@@ -124,4 +125,88 @@ body {
   background-color: #ffffff;
   color: #000;
   border-radius: 10px;
+}
+
+.h1head_main {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Estilos para a seção de atividades */
+.our_activities {
+  width: 100%;
+  padding: 20px;
+}
+
+.head_main {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.h1head_main {
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Estilos para a seção de atividades */
+.our_activities {
+  width: 100%;
+  padding: 20px;
+}
+
+.head_main {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.h1head_main {
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+/* Estilos para a área de atividades */
+.atividades {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaço entre as atividades */
+}
+
+.atividade {
+  position: relative;
+  width: 100%;
+}
+
+.atividade img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.atividade_title {
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 60px;
+  color: #fff;
+  padding: 10px;
+  z-index: 1;
+
+  /* Adiciona um contorno (stroke) ao texto */
+  -webkit-text-stroke: 1px #000; /* Cor e largura do contorno */
+  text-stroke: 1px #000;
+
+  /* Adiciona uma sombra ao texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.atividade_title.esquerda {
+  left: 10px;
+  text-align: left;
+}
+
+.atividade_title.direita {
+  right: 10px;
+  text-align: right;
 }

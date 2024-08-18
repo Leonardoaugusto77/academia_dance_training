@@ -81,3 +81,49 @@
     padding: 30px 15px;
   }
 }
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .h1head_main {
+    font-size: 1.5rem;
+  }
+
+  .atividade_title {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1head_main {
+    font-size: 1.2rem;
+  }
+
+  .atividade_title {
+    font-size: 1rem;
+    padding: 3px;
+  }
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .h1head_main {
+    font-size: 1.5rem;
+  }
+
+  .atividade_title {
+    font-size: 1.2rem;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1head_main {
+    font-size: 1.2rem;
+  }
+
+  .atividade_title {
+    font-size: 1rem;
+    padding: 3px;
+  }
+}
