@@ -11,6 +11,14 @@
     text-align: center;
   }
 
+  .header_logo img {
+    margin-left: 30px;
+  }
+
+  .menu_toggle {
+    font-size: 35px;
+  }
+
   .nav_header a {
     padding: 15px 0;
     border-bottom: 1px solid #444;
@@ -37,6 +45,10 @@
 
 /* Estilos Responsivos */
 @media (max-width: 768px) {
+  #logo_icon_page {
+    width: 50px;
+    height: 50px;
+  }
   .header_top {
     flex-direction: row;
     justify-content: space-between;
@@ -44,6 +56,7 @@
 
   .nav_header {
     display: none;
+
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -85,7 +98,7 @@
 /* Estilos Responsivos */
 @media (max-width: 768px) {
   .h1head_main {
-    font-size: 1.5rem;
+    font-size: 30px;
   }
 
   .atividade_title {
