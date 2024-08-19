@@ -1,4 +1,5 @@
 /* Estilos Responsivos */
+
 @media (max-width: 768px) {
   .nav_header {
     display: none;
@@ -17,15 +18,12 @@
 
   .menu_toggle {
     font-size: 35px;
+    display: block;
   }
 
   .nav_header a {
     padding: 15px 0;
     border-bottom: 1px solid #444;
-  }
-
-  .menu_toggle {
-    display: block;
   }
 
   .menu_toggle.active + .nav_header {
@@ -49,6 +47,7 @@
     width: 50px;
     height: 50px;
   }
+
   .header_top {
     flex-direction: row;
     justify-content: space-between;
@@ -56,7 +55,6 @@
 
   .nav_header {
     display: none;
-
     flex-direction: column;
     position: absolute;
     top: 100%;
@@ -82,6 +80,42 @@
   .nav_header.active {
     display: flex;
   }
+
+  .header_middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+    text-align: center;
+  }
+
+  .header_title {
+    font-size: 38px;
+    font-weight: bold;
+  }
+
+  .header_subtitle {
+    font-size: 25px;
+  }
+
+  .button_visita {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .content_overlay {
+    margin: auto;
+  }
+
+  .flex_visita {
+    display: block;
+  }
 }
 
 @media (max-width: 480px) {
@@ -93,9 +127,21 @@
   .header_middle {
     padding: 30px 15px;
   }
+
+  .header_title {
+    font-size: 1.2rem;
+  }
+
+  .header_subtitle {
+    font-size: 1rem;
+  }
+
+  .button_visita {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
 }
 
-/* Estilos Responsivos */
 @media (max-width: 768px) {
   .h1head_main {
     font-size: 30px;
@@ -118,25 +164,97 @@
   }
 }
 
-/* Estilos Responsivos */
 @media (max-width: 768px) {
-  .h1head_main {
-    font-size: 1.5rem;
+  .teachers_section > div {
+    grid-template-columns: 1fr; /* Alinha os cards em uma única coluna em telas menores */
   }
 
-  .atividade_title {
-    font-size: 1.2rem;
-    padding: 5px;
+  .teacher_card {
+    width: 100%; /* O card ocupa a largura total disponível */
+  }
+
+  .teachers_section > div > div:nth-child(5) {
+    grid-column: 1 / span 1; /* Reverte a configuração de ocupação da linha em telas menores */
+  }
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .partners_title {
+    font-size: 28px; /* Reduz o tamanho da fonte do título em telas menores */
+  }
+
+  .partners_container {
+    flex-direction: column; /* Alinha os itens verticalmente em telas pequenas */
+    align-items: center; /* Centraliza os itens horizontalmente */
+  }
+
+  .partner_item {
+    width: 150px; /* Reduz a largura dos itens em telas menores */
+    height: 150px; /* Reduz a altura dos itens em telas menores */
   }
 }
 
 @media (max-width: 480px) {
-  .h1head_main {
-    font-size: 1.2rem;
+  .partners_title {
+    font-size: 24px; /* Reduz o tamanho da fonte do título em telas muito pequenas */
   }
 
-  .atividade_title {
-    font-size: 1rem;
-    padding: 3px;
+  .partner_item {
+    width: 120px; /* Reduz a largura dos itens em telas muito pequenas */
+    height: 120px; /* Reduz a altura dos itens em telas muito pequenas */
+  }
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+  .social_midia_image {
+    width: 500px; /* Ajusta a largura da imagem em telas médias */
+    height: 215px; /* Ajusta a altura da imagem em telas médias */
+  }
+}
+
+@media (max-width: 768px) {
+  .social_midia_title {
+    font-size: 24px; /* Reduz o tamanho da fonte do título em telas menores */
+    margin-bottom: 20px; /* Reduz o espaçamento abaixo do título */
+  }
+
+  .social_midia_image {
+    width: 400px; /* Ajusta a largura da imagem em telas pequenas */
+    height: 175px; /* Ajusta a altura da imagem em telas pequenas */
+  }
+}
+
+@media (max-width: 480px) {
+  .social_midia_title {
+    font-size: 20px; /* Reduz o tamanho da fonte do título em telas muito pequenas */
+    margin-bottom: 15px; /* Reduz o espaçamento abaixo do título */
+  }
+
+  .social_midia_image {
+    width: 300px; /* Ajusta a largura da imagem em telas muito pequenas */
+    height: 130px; /* Ajusta a altura da imagem em telas muito pequenas */
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .footer_text {
+    font-size: 16px; /* Reduz o tamanho da fonte em telas menores */
+  }
+
+  .footer_image {
+    width: 120px; /* Reduz a largura da imagem em telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer_text {
+    font-size: 14px; /* Reduz o tamanho da fonte em telas muito pequenas */
+  }
+
+  .footer_image {
+    width: 100px; /* Reduz a largura da imagem em telas muito pequenas */
   }
 }

@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Assests/Style/Index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="Imgs/logo_da_academia.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="Assests/Style/responsive.css" />
     <title>Academia Dance & Training</title>
   </head>
@@ -19,10 +30,10 @@
           />
         </div>
         <nav class="nav_header">
-          <a href="#">PROFESSORES</a>
-          <a href="#">ATIVIDADES</a>
-          <a href="#">PARCEIROS</a>
-          <a href="#">FEEDBACKS</a>
+          <a href="#teachers_section">PROFESSORES</a>
+          <a href="#our_activities">ATIVIDADES</a>
+          <a href="#partners">PARCEIROS</a>
+          <a href="#feedbacks">FEEDBACKS</a>
         </nav>
         <button class="menu_toggle" id="menuToggle">☰</button>
       </div>
@@ -31,7 +42,7 @@
     <div class="header_middle">
       <div class="header_content">
         <video autoplay muted loop class="background_video">
-          <source src="Imgs/0817 (1).mp4" type="video/mp4" />
+          <source src="Imgs/background video.mp4" type="video/mp4" />
           Seu navegador não suporta a reprodução de vídeos.
         </video>
         <div class="content_overlay">
@@ -40,13 +51,15 @@
             Sua melhor versão começa aqui. Junte-se a nós!
           </h2>
           <div class="flex_visita">
-            <button class="button_visita">Agende sua visita!</button>
+            <a href="">
+              <button class="button_visita">Agende sua visita!</button></a
+            >
           </div>
         </div>
       </div>
     </div>
 
-    <section class="our_activities">
+    <section id="our_activities" class="our_activities">
       <div class="head_main">
         <h1 class="h1head_main">Conheça nossas atividades!</h1>
       </div>
@@ -79,34 +92,157 @@
       </div>
     </section>
 
-    <section class="teachers_section">
+    <section id="teachers_section" class="teachers_section">
       <h3 class="section_title">Nossos Professores</h3>
       <div>
         <div class="teacher_card">
-          <img src="Imgs/Ana foto.png" alt="Professora Ana" />
+          <a href="https://www.instagram.com/anapaulanutria/" target="_blank"
+            ><img src="Imgs/prof ana.png" alt="Professora Ana"
+          /></a>
           <p class="teacher_name">Ana</p>
         </div>
         <div class="teacher_card">
-          <img src="Imgs/Foto Fabi.png" alt="Professora Ana" />
+          <a
+            href="https://www.instagram.com/fabi.mbs?igsh=MTNsNm5qeDI0aWE5bQ=="
+            target="_blank"
+          >
+            <img src="Imgs/prof fabi.png" alt="Professora Ana"
+          /></a>
           <p class="teacher_name">Fabiana</p>
         </div>
         <div class="teacher_card">
-          <img src="Imgs/Sem Título-1.png" alt="Professora Ana" />
-          <p class="teacher_name">César</p>
+          <a
+            href="https://www.instagram.com/paulo.cezar.santos?igsh=MWM4NDljbThvcnQ4aA%3D%3D"
+            target="_blank"
+            ><img src="Imgs/prof cesar.png" alt="Professora Ana"
+          /></a>
+          <p class="teacher_name">Cezar</p>
         </div>
         <div class="teacher_card">
-          <img src="Imgs/jamanta.png" alt="Professora Ana" />
+          <a
+            href="https://www.instagram.com/jamantagp?igsh=MXA1MDA2bjB6NHUwMw%3D%3D"
+            target="_blank"
+            ><img src="Imgs/prof jamanta.png" alt="Professora Ana"
+          /></a>
           <p class="teacher_name">Alan Jamanta</p>
         </div>
         <div class="teacher_card">
-          <img
-            src="Imgs/WhatsApp Image 2024-08-08 at 10.04.22.jpeg"
-            alt="Professora Ana"
-          />
+          <a
+            href="https://www.instagram.com/rivelino1109?igsh=MTA1Mzgzd2F0YjA1bA%3D%3D"
+            target="_blank"
+          >
+            <img src="Imgs/prof revelino.jpeg" alt="Professora Ana"
+          /></a>
           <p class="teacher_name">Rivelino</p>
         </div>
       </div>
     </section>
+
+    <section id="feedbacks" class="feedbacks">
+      <div class="feedbacks_container">
+        <!-- Título da seção -->
+        <h3 class="feedbacks_title">O que nossos alunos estão dizendo!</h3>
+
+        <!-- Container para a navegação e feedback -->
+        <div class="feedbacks_content">
+          <!-- Botão para navegação à esquerda -->
+          <button class="feedback_nav feedback_nav_prev" aria-label="Anterior">
+            &#10094;
+          </button>
+
+          <!-- Feedback do aluno -->
+          <div class="feedback_card">
+            <!-- Foto do aluno em um círculo -->
+            <div class="feedback_photo">
+              <img
+                src="Imgs/Feedbacks/1.jpg"
+                alt="Foto do aluno"
+                id="feedbackPhoto"
+              />
+            </div>
+            <!-- Comentário do aluno -->
+            <p class="feedback_comment" id="feedbackComment">
+              "Super indico, energia fantástica!"
+            </p>
+            <!-- Nome do aluno -->
+            <h4 class="feedback_name" id="feedbackName">Vanessa Almeida</h4>
+          </div>
+
+          <!-- Botão para navegação à direita -->
+          <button class="feedback_nav feedback_nav_next" aria-label="Próximo">
+            &#10095;
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="partners">
+      <h3 class="partners_title">Nossos Parceiros</h3>
+
+      <div class="partners_container">
+        <div class="partner_item">
+          <a href="#" class="partner_link">
+            <img
+              src="Imgs/boxe federa.png"
+              alt="Mercado Tangua"
+              class="partner_image"
+            />
+          </a>
+        </div>
+        <div class="partner_item">
+          <a href="#" class="partner_link">
+            <img
+              src="Imgs/Nutri logo.jpeg"
+              alt="Mercado Tangua"
+              class="partner_image"
+            />
+          </a>
+        </div>
+        <div class="partner_item">
+          <a
+            href="https://www.instagram.com/mercadotangua/"
+            class="partner_link"
+            target="_blank"
+          >
+            <img
+              src="Imgs/Mercado-tangua.jpg"
+              alt="Mercado Tangua"
+              class="partner_image"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="social_midia">
+      <h3 class="social_midia_title">
+        Acesse o Instagram para <br />
+        acompanhar as novidades!
+      </h3>
+      <div class="social_midia_content">
+        <a
+          href="https://www.instagram.com/academiadancetraining/"
+          target="_blank"
+        >
+          <img
+            src="Imgs/Social midia.png"
+            alt="Instagram"
+            class="social_midia_image"
+          />
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <h2 class="footer_text">Desenvolvimento por</h2>
+      <a href="https://www.instagram.com/leonardoaugusto137/" target="_blank"
+        ><img
+          src="Imgs/Name of page.png"
+          alt="Nome da Página"
+          class="footer_image"
+      /></a>
+    </footer>
+
+    <script src="Assests/JavaScript/Index.js"></script>
   </body>
 </html>
-<script src="Assests/JavaScript/Index.js"></script>
