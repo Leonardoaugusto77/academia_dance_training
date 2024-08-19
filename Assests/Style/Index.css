@@ -212,13 +212,6 @@ body {
 }
 
 /* Estilos para a seção de professores */
-.teachers_section {
-  display: flex;
-  justify-content: center; /* Centraliza a seção horizontalmente na página */
-  align-items: center; /* Centraliza verticalmente, se necessário */
-  height: 100vh; /* Define a altura da seção como 100% da altura da janela */
-  margin-top: 160px; /* Adiciona o espaçamento superior de 25px */
-}
 
 .teachers_section > div {
   display: grid;
@@ -257,6 +250,54 @@ body {
 .teachers_section > div > div:nth-child(5) {
   grid-column: 1 / span 2; /* Faz a última imagem ocupar toda a linha */
   justify-self: center; /* Centraliza a última imagem dentro da linha */
+}
+
+/* Estilos para a seção de professores */
+.teachers_section {
+  display: flex;
+  flex-direction: column; /* Organiza o título e o grid em coluna */
+  align-items: center; /* Centraliza horizontalmente */
+  margin-top: 25px; /* Adiciona o espaçamento superior de 25px */
+}
+
+.section_title {
+  text-align: center; /* Centraliza o título horizontalmente */
+  font-size: 35px; /* Ajusta o tamanho da fonte do título */
+  color: #ffffff; /* Define a cor do texto do título */
+  margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+.teachers_section > div {
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* Define duas colunas de largura igual */
+  gap: 20px; /* Espaçamento entre os cards dos professores */
+  justify-items: center; /* Centraliza os itens dentro do grid */
+}
+
+.teacher_card {
+  display: flex;
+  flex-direction: column; /* Organiza a imagem e o nome em uma coluna */
+  align-items: center; /* Centraliza a imagem e o nome */
+  width: 200px;
+  height: auto;
+  text-align: center;
+}
+
+.teacher_card img {
+  width: 100%; /* Garante que as imagens ocupem 100% da largura do card */
+  height: 200px; /* Define uma altura fixa para as imagens */
+  object-fit: cover; /* Ajusta a imagem dentro do contêiner mantendo as proporções */
+  border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+}
+
+.teacher_name {
+  margin-top: 16px; /* Espaçamento entre a imagem e o nome */
+  margin-bottom: 16px; /* Espaçamento abaixo do nome */
+  font-size: 18px;
+  color: #ffffff;
 }
 
 /* Responsividade */
