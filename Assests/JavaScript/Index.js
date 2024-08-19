@@ -7,21 +7,39 @@ document.getElementById("menuToggle").addEventListener("click", function () {
 const feedbacks = [
   {
     photo: "Imgs/Feedbacks/1.jpg",
-    comment: "Super indico, energia fantástica!",
+    comment: '"Super indico, energia fantástica!"',
     name: "Vanessa Almeida",
   },
   {
-    photo: "Imgs/Feedbacks/2.jpg",
-    comment: "A melhor academia da região!",
-    name: "João Silva",
+    photo: "Imgs/Feedbacks/3.jpg",
+    comment: '"Melhor academia da região sem dúvidas 👏🏼"',
+    name: "Ana Claudia Pimentel",
   },
   {
-    photo: "Imgs/Feedbacks/3.jpg",
-    comment: "Professores excelentes e ambiente acolhedor.",
-    name: "Maria Oliveira",
+    photo: "Imgs/Feedbacks/4.jpg",
+    comment:
+      '"Maravilhoso super recomendo! A melhor academia os professores são de mais! ❤️"',
+    name: "Ariany Marchiorato",
+  },
+  {
+    photo: "Imgs/Feedbacks/5.jpg",
+    comment:
+      '"Professoras ótimas, super animadas! Estou adorando fazer as aulas!"',
+    name: "Ana Lagnez",
+  },
+  {
+    photo: "Imgs/Feedbacks/7.jpg",
+    comment: '"Como eu amo esta energia deste lugar."',
+    name: "Edina Oliveira",
+  },
+  {
+    photo: "Imgs/Feedbacks/8.jpg",
+    comment: '"A melhor! 👏👏"',
+    name: "Roseli Aparecida",
   },
 ];
 
+// Função para atualizar o feedback
 // Função para atualizar o feedback
 function updateFeedback(index) {
   const feedback = feedbacks[index];
@@ -30,7 +48,7 @@ function updateFeedback(index) {
   const feedbackName = document.getElementById("feedbackName");
 
   feedbackPhoto.src = feedback.photo;
-  feedbackComment.textContent = feedback.comment;
+  feedbackComment.innerHTML = feedback.comment; // Usando innerHTML para exibir aspas duplas corretamente
   feedbackName.textContent = feedback.name;
 }
 

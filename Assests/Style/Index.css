@@ -254,7 +254,7 @@ body {
 }
 
 .teacher_name {
-  font-size: 20px !important;
+  font-size: 30px !important;
   color: #ffffff;
   margin: 16px 0;
 }
@@ -344,6 +344,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao texto das setas */
 }
 
 .feedback_nav_prev {
@@ -367,6 +368,7 @@ body {
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Adiciona sombra ao círculo das fotos */
 }
 
 .feedback_photo img {

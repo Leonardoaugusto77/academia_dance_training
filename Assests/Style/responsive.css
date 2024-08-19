@@ -39,6 +39,10 @@
   .header_subtitle {
     font-size: 1.2rem;
   }
+
+  .background_video {
+    height: 35vh;
+  }
 }
 
 /* Estilos Responsivos */
@@ -89,6 +93,9 @@
     padding: 30px 15px;
     text-align: center;
   }
+  .header_content {
+    position: static;
+  }
 
   .header_title {
     font-size: 38px;
@@ -124,19 +131,24 @@
     padding: 8px 15px;
   }
 
+  .header_content {
+    position: static;
+  }
+
   .header_middle {
     padding: 30px 15px;
   }
 
   .header_title {
-    font-size: 1.2rem;
+    font-size: 35px;
   }
 
   .header_subtitle {
-    font-size: 1rem;
+    font-size: 20px;
   }
 
   .button_visita {
+    width: 260px;
     padding: 8px 16px;
     font-size: 0.9rem;
   }
@@ -159,7 +171,8 @@
   }
 
   .atividade_title {
-    font-size: 1rem;
+    font-size: 25px;
+    font-weight: bold;
     padding: 3px;
   }
 }
@@ -201,8 +214,8 @@
   }
 
   .partner_item {
-    width: 120px; /* Reduz a largura dos itens em telas muito pequenas */
-    height: 120px; /* Reduz a altura dos itens em telas muito pequenas */
+    width: 200px; /* Reduz a largura dos itens em telas muito pequenas */
+    height: 200px; /* Reduz a altura dos itens em telas muito pequenas */
   }
 }
 
@@ -233,8 +246,8 @@
   }
 
   .social_midia_image {
-    width: 300px; /* Ajusta a largura da imagem em telas muito pequenas */
-    height: 130px; /* Ajusta a altura da imagem em telas muito pequenas */
+    width: 400px; /* Ajusta a largura da imagem em telas muito pequenas */
+    height: 180px; /* Ajusta a altura da imagem em telas muito pequenas */
   }
 }
 
@@ -256,5 +269,52 @@
 
   .footer_image {
     width: 100px; /* Reduz a largura da imagem em telas muito pequenas */
+  }
+}
+/* Media Query para dispositivos menores */
+@media (max-width: 768px) {
+  .feedbacks_title {
+    font-size: 6vw; /* Largura da viewport */
+  }
+
+  .feedback_nav {
+    font-size: 12vw; /* Largura da viewport */
+  }
+
+  .feedback_photo {
+    width: 50vw; /* Largura da viewport */
+    height: 50vw; /* Largura da viewport */
+  }
+
+  .feedback_comment {
+    font-size: 5vw; /* Largura da viewport */
+  }
+
+  .feedback_name {
+    font-size: 4vw; /* Largura da viewport */
+  }
+}
+
+/* Media Query para dispositivos muito grandes */
+@media (min-width: 1200px) {
+  .feedbacks_title {
+    font-size: 3vw; /* Largura da viewport */
+  }
+
+  .feedback_nav {
+    font-size: 6vw; /* Largura da viewport */
+  }
+
+  .feedback_photo {
+    width: 20vw; /* Largura da viewport */
+    height: 20vw; /* Largura da viewport */
+  }
+
+  .feedback_comment {
+    font-size: 2.5vw; /* Largura da viewport */
+  }
+
+  .feedback_name {
+    font-size: 2vw; /* Largura da viewport */
   }
 }
